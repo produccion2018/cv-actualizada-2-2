@@ -1,0 +1,143 @@
+/* Estilos base */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  transform: scale(0.95);
+  transform-origin: top center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body:hover {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+/* Línea de tiempo */
+.timeline {
+  flex: 2;
+  min-width: 260px;
+  padding: 15px;
+  background-color: #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.item {
+  margin-bottom: 20px;
+  border-left: 4px solid orangered;
+  padding-left: 15px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.item:hover {
+  transform: translateX(5px);
+  background-color: #3a3a3a;
+}
+
+.years {
+  font-size: 1rem;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 3px;
+}
+
+.company {
+  font-style: italic;
+  color: #bbbbbb;
+  margin-top: 3px;
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background-color: #1e1e1e;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 240px;
+  box-shadow: 0 0 6px #ff45004d;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebar:hover {
+  transform: translateY(-5px);
+  background-color: #333;
+}
+
+.sidebar h3 {
+  color: orangered;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  border-bottom: 2px solid orangered;
+  padding-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+.sidebar h3:hover {
+  color: #ff6347;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  margin-bottom: 8px;
+  font-size: 1rem;
+  padding-left: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.sidebar li:hover {
+  color: orangered;
+}
+
+.sidebar li::before {
+  content: "➤";
+  position: absolute;
+  left: 0;
+  color: orangered;
+  transition: color 0.3s ease;
+}
+
+.sidebar li:hover::before {
+  color: #ff6347;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .timeline, .sidebar {
+    min-width: 100%;
+  }
+
+  .sidebar {
+    margin-top: 15px;
+  }
+}

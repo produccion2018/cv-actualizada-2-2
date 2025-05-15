@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículum Mauro Alexander Pinto</title>
+    <link rel="shortcut icon" href="./img/fiveicon.jfif" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- Bootstrap CDN en tu <head> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Íconos -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Tipografía -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/web.css" />
+    <link rel="stylesheet" href="./css/experiencias.css" />
+    <link rel="stylesheet" href="./css/competencia.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+  </head>
+  <body>
+    <div class="container-cv">
+      <!-- Panel izquierdo -->
+      <div class="left-panel">
+        <img
+          src="./img/foto de perfil mauro Pinto.jpg"
+          alt="Foto"
+          class="profile-pic"
+        />
+        <h1>MAURO</h1>
+        <h2>Alexander Pinto</h2>
+        <blockquote>
+          <p>
+            "Soy Mauro Pinto, Desarrollador Web.<br />
+            Mi compromiso con la creatividad y la tecnología<br />
+            me ha llevado a una constante evolución<br />
+            desde el año 2019, combinando mi formación<br />
+            en Comunicación Audiovisual con el desarrollo web.<br />
+            Me he especializado mediante cursos en Coderhouse<br />
+            y proyectos propios que integran diseño y funcionalidad".
+          </p>
+        </blockquote>
+      </div>
+
+      <!-- Botones para seleccionar las secciones -->
+      <div class="side-buttons">
+        <button onclick="showSection('developer')">DEVELOPER<br />WEB.</button>
+        <button onclick="showSection('competencias')" class="orange">
+          COMPETENCIAS
+        </button>
+        <button onclick="showSection('experiencia')" class="orange">
+          EXPERIENCIAS
+        </button>
+
+        <div class="icons">
+          <a href="#" onclick="location.reload()" title="Recargar"
+            ><i class="bi bi-arrow-clockwise"></i
+          ></a>
+          <a href="https://web.whatsapp.com/" target="_blank" title="WhatsApp"
+            ><i class="fab fa-whatsapp whatsapp-icon"></i
+          ></a>
+          <a href="https://www.google.com" target="_blank" title="Buscar"
+            ><i class="bi bi-search"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/tu_usuario"
+            target="_blank"
+            title="Instagram"
+            ><i class="bi bi-instagram"></i
+          ></a>
+          <a
+            href="https://github.com/produccion2018"
+            target="_blank"
+            title="GitHub"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/mauroalexanderpinto/"
+            target="_blank"
+            title="LinkedIn"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+          <a
+            href="./cv/CV_MauroPinto-cv2.2 js-react.pdf"
+            download
+            title="Descargar CV"
+            ><i class="bi bi-download"></i
+          ></a>
+        </div>
+      </div>
+
+      <!-- Panel derecho -->
+      <div class="right-panel">
+        <div id="defaultContent">
+          <h1 class="cv-title">CURRICULUM VITAE MAURO PINTO</h1>
+          <img
+            src="dragon.png"
+            alt="Logo dragón"
+            class="dragon-logo"
+            id="dragonLogo"
+          />
+        </div>
+
+        <!-- Sección Developer -->
+        <div id="developer" class="content-section">
+          <div class="developer-content">
+            <div class="left-column">
+              <!-- Sección de Front-End -->
+              <div class="section">
+                <h3>FRONT-END</h3>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>HTML</li>
+                  <li>CSS / Sass</li>
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+
+              <!-- Sección de Frameworks y Herramientas -->
+              <div class="section">
+                <h3>FRAMEWORKS / HERRAMIENTAS</h3>
+                <ul>
+                  <li>Git / GitHub</li>
+                  <li>APIs REST</li>
+                  <li>React Router</li>
+                  <li>Redux (en progreso)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="right-column">
+              <!-- Sección de Idiomas -->
+              <div class="section">
+                <h3>IDIOMAS</h3>
+                <ul>
+                  <li>Español (Nativo)</li>
+                  <li>Inglés (Intermedio técnico)</li>
+                </ul>
+              </div>
+
+              <!-- Sección de Soft Skills -->
+              <div class="section">
+                <h3>SOFT SKILLS</h3>
+                <ul>
+                  <li>Diseño y Comunicación Audiovisual</li>
+                  <li>🎙️ Locución profesional</li>
+                  <li>🎞️ Edición de video (Premiere / After Effects)</li>
+                  <li>🎬 Producción multimedia y contenidos digitales</li>
+                  <li>Trabajo en equipo</li>
+                  <li>Creatividad e innovación</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+ <!-- Sección Competencias -->
+<div id="competencias" class="content-section" style="display: none">
+  <h2 class="text-center mb-4">💻 Mis Competencias</h2>
+  <div class="container">
+    <div class="row justify-content-center">
+      <!-- HTML5 -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-html5 fa-3x" style="color: #e34c26"></i>
+        <p class="mt-2">HTML5</p>
+      </div>
+
+      <!-- CSS3 -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-css3-alt fa-3x" style="color: #264de4"></i>
+        <p class="mt-2">CSS3</p>
+      </div>
+
+      <!-- Sass -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-sass fa-3x" style="color: #cd6799"></i>
+        <p class="mt-2">Sass</p>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-bootstrap fa-3x" style="color: #563d7c"></i>
+        <p class="mt-2">Bootstrap</p>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-js-square fa-3x" style="color: #f7df1e"></i>
+        <p class="mt-2">JavaScript</p>
+      </div>
+
+      <!-- React -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-react fa-3x" style="color: #61dafb"></i>
+        <p class="mt-2">React</p>
+      </div>
+
+      <!-- Photoshop -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-paint-brush fa-3x" style="color: #31a8ff"></i>
+        <p class="mt-2">Photoshop</p>
+      </div>
+
+      <!-- Git -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-git-alt fa-3x" style="color: #f05032"></i>
+        <p class="mt-2">Git</p>
+      </div>
+
+      <!-- Premiere -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-video fa-3x" style="color: #9999ff"></i>
+        <p class="mt-2">Premiere</p>
+      </div>
+
+      <!-- Producción y Comunicación -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-microphone-alt fa-3x" style="color: #ff5733"></i>
+        <p class="mt-2">Producción y Comunicación</p>
+      </div>
+
+      <!-- Figma -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fab fa-figma fa-3x" style="color: #a259ff"></i>
+        <p class="mt-2">Figma</p>
+      </div>
+
+      <!-- Flexbox CSS -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-align-left fa-3x" style="color: #4db6ac"></i>
+        <p class="mt-2">Flexbox CSS</p>
+      </div>
+
+      <!-- Grid CSS -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-th-large fa-3x" style="color: #26c6da"></i>
+        <p class="mt-2">Grid CSS</p>
+      </div>
+
+      <!-- Responsive Design -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-mobile-alt fa-3x" style="color: #00bfa5"></i>
+        <p class="mt-2">Responsive Design</p>
+      </div>
+
+      <!-- Arquitectura CSS -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-sitemap fa-3x" style="color: #6c63ff"></i>
+        <p class="mt-2">Arquitectura CSS</p>
+      </div>
+
+      <!-- Efectos y Movimiento en CSS -->
+      <div class="col-6 col-md-3 text-center mb-4">
+        <i class="fas fa-magic fa-3x" style="color: #ff4081"></i>
+        <p class="mt-2">Efectos y Movimiento</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+        
+            <!-- Sección Experiencia -->
+            <div id="experiencia" class="content-section">
+              <div class="container">
+                <h2>Experiencia</h2>
+
+                <section class="timeline">
+                  <div class="item">
+                    <div class="years">2025 – 2024</div>
+                    <div class="role">Creador de Contenido en YouTube</div>
+                    <div class="company">
+                      Canal ADA TV <em>(Cultura, Salud y Entretenimiento)</em>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="years">2024 – 2023</div>
+                    <div class="role">Desarrollador Web Independiente</div>
+                    <div class="company">
+                      Proyectos Propios <em>(HTML, CSS, JavaScript, APIs)</em>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="years">2023 – 2019</div>
+                    <div class="role">
+                      Licenciado en Comunicación Audiovisual
+                    </div>
+                    <div class="company">
+                      UAI (Universidad Abierta Interamericana)
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="years">2021 – 2022</div>
+                    <div class="role">Formación en Desarrollo Web</div>
+                    <div class="company">
+                      CoderHouse <em>(HTML, CSS, JS, Git, React)</em>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="years">2014 – 2017</div>
+                    <div class="role">Producción de Radio y Televisión</div>
+                    <div class="company">
+                      ISEC (Instituto Sudamericano para la Enseñanza de la
+                      Comunicación)
+                    </div>
+                  </div>
+                </section>
+
+                <aside class="sidebar">
+                  <h3>Contenido del canal:</h3>
+                  <ul>
+                    <li>Salud y espiritualidad</li>
+                    <li>Cultura y actualidad</li>
+                    <li>Música y entrevistas</li>
+                    <li>Desarrollo Web y tecnología</li>
+                  </ul>
+                </aside>
+              </div>
+            </div>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script src="./js/main.js"></script>
+          </body>
+        </html>
+   

@@ -1,0 +1,162 @@
+/* Estilo base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #ffffff, #f0f0f0);
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px 15px;
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: orangered;
+  font-size: 1.6rem;
+}
+
+/* Sección de skills */
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Contenedor circular para íconos */
+.circle-skill {
+  text-align: center;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px #0000001a;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover animado */
+.circle-skill:hover {
+  background-color: #fafafa;
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px #00000026;
+}
+
+/* SVG (círculo de progreso) */
+.circle-skill svg {
+  width: 120px;
+  height: 120px;
+  transform: rotate(-90deg);
+}
+
+/* Círculo de fondo */
+circle {
+  fill: none;
+  stroke-width: 10;
+  stroke: #e6e6e6;
+}
+
+/* Círculo de progreso */
+.progress {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 377;
+  transition: stroke-dashoffset 1s ease;
+}
+
+/* Colores de habilidades */
+.sass       { stroke: #cd6799; stroke-dashoffset: 60; }
+.js         { stroke: #f0db4f; stroke-dashoffset: 50; }
+.react      { stroke: #61dafb; stroke-dashoffset: 55; }
+.html       { stroke: #e34c26; stroke-dashoffset: 45; }
+
+.bootstrap  { stroke: #7952b3; stroke-dashoffset: 70; }
+.uxui       { stroke: #00bfa6; stroke-dashoffset: 60; }
+.video      { stroke: #f44336; stroke-dashoffset: 65; }
+.photoshop  { stroke: #31a8ff; stroke-dashoffset: 75; }
+.afterfx    { stroke: #9999ff; stroke-dashoffset: 90; }
+
+/* Etiqueta de texto dentro del círculo */
+.label {
+  position: absolute;
+  width: 100%;
+  top: 40px;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+/* Efecto hover en texto */
+.circle-skill:hover .label {
+  color: #000;
+}
+
+/* Idiomas */
+.languages {
+  max-width: 500px;
+  margin: auto;
+  font-size: 16px;
+}
+
+.languages div {
+  margin-bottom: 15px;
+}
+
+.bar {
+  height: 8px;
+  border-radius: 5px;
+  background-color: #ddd;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.full {
+  width: 100%;
+  background-color: #4caf50;
+}
+
+.medium {
+  width: 60%;
+  background-color: #ffa726;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .circle-skill {
+    width: 100px;
+    height: 100px;
+  }
+
+  .circle-skill svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .label {
+    font-size: 12px;
+    top: 35px;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  .languages {
+    font-size: 14px;
+  }
+}

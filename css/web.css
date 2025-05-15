@@ -1,0 +1,132 @@
+/* PANEL DERECHO GENERAL */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+  color: #fff;
+  padding: 30px;
+  width: 100%;
+  border-left: 3px solid #ff914d;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cv-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ff914d;
+}
+
+.dragon-logo {
+  display: block;
+  margin: 0 auto 30px;
+  width: 80px;
+}
+
+/* CONTENEDOR DE DOS COLUMNAS */
+.habilidades-comunicacion {
+  display: flex;
+  gap: 20px;
+}
+
+/* COLUMNA IZQUIERDA: GRIS CLARO */
+.skills-section {
+  background-color: #2e2e2e;
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+}
+
+/* COLUMNA DERECHA: GRIS OSCURO (se mantiene igual que fondo general) */
+.comunicacion-section {
+  background-color: #1e1e1e;
+  padding: 20px;
+  flex: 1;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+.skills-section h2, .comunicacion-section h2 {
+  color: #ff914d;
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ff914d;
+  padding-bottom: 5px;
+}
+
+.skills-section ul, .comunicacion-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-section li, .comunicacion-section li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* DOTS */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.orange { background-color: #ff914d; }
+.red { background-color: #ff4d4d; }
+.white { background-color: #ffffff; border: 1px solid #ccc; }
+
+/* IDIOMAS BARRAS */
+.barra {
+  height: 8px;
+  background-color: #444;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.full { width: 100%; background-color: #4caf50; }
+.medium { width: 60%; background-color: #f1c40f; }
+
+/* PUNTOS SOFT SKILLS */
+.puntos {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+.dot.filled { background-color: #4caf50; }
+.dot.semi { background-color: #f1c40f; }
+.dot.empty { background-color: #aaa; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .right-panel {
+    padding: 20px;
+    border-left: none;
+    border-top: 3px solid #ff914d;
+  }
+
+  .habilidades-comunicacion {
+    flex-direction: column;
+  }
+
+  .skills-section,
+  .comunicacion-section {
+    margin-bottom: 20px;
+  }
+
+  .dragon-logo {
+    width: 60px;
+  }
+
+  .cv-title {
+    font-size: 1.5rem;
+  }
+
+  .skills-section h2,
+  .comunicacion-section h2 {
+    font-size: 1.1rem;
+  }
+}
+
+
