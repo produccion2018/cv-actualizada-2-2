@@ -160,3 +160,22 @@ circle {
     font-size: 14px;
   }
 }
+
+
+
+
+#competencias .col-md-3 i,
+#competencias .col-md-3 p {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+/* Hover solo en ícono y texto */
+#competencias .col-md-3:hover i,
+#competencias .col-md-3:hover p {
+  background: linear-gradient(145deg, #ffffff, #111111);
+  box-shadow: 0 4px 10px #0000001a;
+  transform: scale(1.05);
+}
