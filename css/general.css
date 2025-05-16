@@ -21,7 +21,7 @@
   .right-column {
     flex: 1;
     min-width: 300px;
-    background-color: #f9f9f9; /* fondo gris suave */
+    background-color: #f9f9f9; 
     padding: 30px 30px 30px 40px;
     border-left: 8px solid orangered;
     border-radius: 10px;
@@ -30,12 +30,18 @@
     position: relative;
     overflow: hidden;
   }
-  
+
+  h1:hover {
+  color: #ff5733;
+  cursor: pointer; 
+  transition: color 0.3s ease; 
+}
+
   /* Hover con efecto elegante */
   .left-column:hover,
   .right-column:hover {
     transform: translateY(-5px);
-    box-shadow: inset 0 0 15px rgba(255, 69, 0, 0.1), 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 0 15px #ff45001a, 0 8px 20px #0000001a;
   }
   
   /* Títulos de sección */
